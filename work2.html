@@ -1,13 +1,11 @@
 <html>
   <head>
     <script
-      type="text/javascript"
-      data-cmp-ab="1"
-      src="https://cdn.consentmanager.net/delivery/autoblocking/cb3a4f70926a4.js"
-      data-cmp-host="c.delivery.consentmanager.net"
-      data-cmp-cdn="cdn.consentmanager.net"
-      data-cmp-codesrc="0"
+      async
+      custom-element="amp-consent"
+      src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"
     ></script>
+    <meta name="amp-consent-blocking" content="amp-ad" />
   </head>
   <body>
     <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
@@ -15,7 +13,7 @@
         {
           "postPromptUI": "postPromptUI",
           "clientConfig": {
-            "cdid": "cb3a4f70926a4",
+            "cdid": "...Your CMP Code-ID...",
             "params": ""
           }
         }
@@ -26,6 +24,5 @@
         </button>
       </div>
     </amp-consent>
-    <a href="?cmpscreen" class="cmpfooterlink cmpfooterlinkcmp">Privacy settings</a>
   </body>
 </html>
