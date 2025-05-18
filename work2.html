@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script
+      type="text/javascript"
+      data-cmp-ab="1"
+      src="https://cdn.consentmanager.net/delivery/autoblocking/cb3a4f70926a4.js"
+      data-cmp-host="c.delivery.consentmanager.net"
+      data-cmp-cdn="cdn.consentmanager.net"
+      data-cmp-codesrc="0"
+    ></script>
+  </head>
+  <body>
+    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
+      <script type="application/json">
+        {
+          "postPromptUI": "postPromptUI",
+          "clientConfig": {
+            "cdid": "cb3a4f70926a4",
+            "params": ""
+          }
+        }
+      </script>
+      <div id="postPromptUI">
+        <button on="tap:ConsentManager.prompt()" role="button">
+          Manage privacy settings
+        </button>
+      </div>
+    </amp-consent>
+  </body>
+</html>
