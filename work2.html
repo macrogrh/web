@@ -1,28 +1,26 @@
 <html>
   <head>
+    <script>
+      window.gdprAppliesGlobally = false;
+      window.cmp_id = XXX;
+      window.cmp_params = "";
+      window.cmp_host = "delivery.consentmanager.net";
+      window.cmp_cdn = "cdn.consentmanager.net";
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.consentmanager.net/delivery/cmp.min.css"
+    />
     <script
-      async
-      custom-element="amp-consent"
-      src="https://cdn.ampproject.org/v0/amp-consent-0.1.js"
+      type="text/javascript"
+      src="https://cdn.consentmanager.net/delivery/cmp.min.js"
     ></script>
-    <meta name="amp-consent-blocking" content="amp-ad" />
+    <script
+      type="text/javascript"
+      src="https://delivery.consentmanager.net/delivery/cmp.php?id=cb3a4f70926a4"
+    ></script>
   </head>
   <body>
-    <amp-consent id="ConsentManager" layout="nodisplay" type="ConsentManager">
-      <script type="application/json">
-        {
-          "postPromptUI": "postPromptUI",
-          "clientConfig": {
-            "cdid": "...Your CMP Code-ID...",
-            "params": ""
-          }
-        }
-      </script>
-      <div id="postPromptUI">
-        <button on="tap:ConsentManager.prompt()" role="button">
-          Manage privacy settings
-        </button>
-      </div>
-    </amp-consent>
+    hello world
   </body>
 </html>
